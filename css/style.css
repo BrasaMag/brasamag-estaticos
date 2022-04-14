@@ -10,6 +10,7 @@
     --principal: #d6d818;
     --branco: #fff;
     --preto: #000;
+    --platina: #E5E5E5;
     --montserrat: "Montserrat", sans-serif;
     --hepta-slab: "Hepta Slab", serif;
 }
@@ -280,4 +281,73 @@ p span {
 
 .post-date {
     font-weight: 500;
+}
+
+.midias {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.podcast, .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 50px 6.25em;
+}
+
+.podcast {
+    background-color: var(--preto);
+}
+
+.podcast-title {
+    color: var(--principal);
+    font-size: 4em;
+    font-family: var(--hepta-slab);
+    font-weight: 400;
+    width: 5em;
+}
+
+.podcast-title span {
+    font-weight: 800;
+}
+
+.podcast > span {
+    font-size: 1.125em;
+    color: var(--principal);
+    font-family: var(--montserrat);
+    margin: 26px 0;
+}
+
+.podcast-episodio {
+    font-size: 3em;
+    color: var(--branco);
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.podcast-descricao {
+    font-family: var(--hepta-slab);
+    font-weight: 400;
+    font-size: 3em;
+    color: var(--branco);
+    width: 12em;
+    letter-spacing: 1px;
+}
+
+.podcast a {
+    padding: 17px 25px;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: var(--hepta-slab);
+    color: var(--preto);
+    background-color: var(--principal);
+    margin-top: 36px;
+    text-decoration: none;
+}
+
+.newsletter {
+    background-color: var(--platina);
 }
