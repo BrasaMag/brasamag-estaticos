@@ -1,9 +1,9 @@
 /**
  * Breakpoints
- * 320px - 768px Mobile
- * 768px — 1024px: Tablet
- * 1024px - 1440px: Laptop
- * 1025px — 1200px: Laptop L
+ * 320 x 768 Mobile
+ * 768 x 1024: Tablet
+ * 1024 x 1440: Laptop
+ * 1025 x 1200: Laptop L
 */
 
 :root {
@@ -31,7 +31,7 @@ img {
 
 header {
     background-color: var(--principal);
-    padding: 31px 93px;
+    padding: 1.938em 5.813em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -88,11 +88,11 @@ header {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 52px;
+    margin-bottom: 3.25em;
 }
 
 .chamada {
-    width: 800px;
+    width: 50em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -109,9 +109,8 @@ header {
 }
 
 .chamada hr {
-    width: 117.35px;
-    height: 1.03px;
-    font-size: 14px;
+    width: 7.334em;
+    height: 0.063em;
     background-color: var(--principal);
     border: none;
 }
@@ -146,8 +145,8 @@ p span {
 }
 
 .destaques {
-    margin-top: 64px;
-    padding: 74px 0;
+    margin-top: 4em;
+    padding: 4.625em 0;
     width: 100%;
     background-color: var(--principal);
 }
@@ -164,7 +163,7 @@ p span {
 }
 
 .destaques hr {
-    height: 2px;
+    height: 0.125em;
     background: var(--branco);
     border: none;
     margin: 1em 0;
@@ -186,7 +185,7 @@ p span {
 }
 
 .destaque-info {
-    margin-top: 54px;
+    margin-top: 3.375em;
     display: flex;
     flex-direction: column;
     gap: .5em;
@@ -232,7 +231,7 @@ p span {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
 }
 
 .post-info a {
@@ -248,7 +247,7 @@ p span {
 }
 
 .post-info {
-    margin-top: 25px;
+    margin-top: 1.563em;
     display: flex;
     flex-direction: column;
     gap: .5em;
