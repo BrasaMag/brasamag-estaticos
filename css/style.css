@@ -11,6 +11,7 @@
     --branco: #fff;
     --preto: #000;
     --platina: #E5E5E5;
+    --cinza: #929292;
     --montserrat: "Montserrat", sans-serif;
     --hepta-slab: "Hepta Slab", serif;
 }
@@ -228,7 +229,7 @@ p span {
 
 .posts {
     margin: 6.188em 0;
-    padding: 0 5.625em;
+    padding: 0 4.625em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -350,4 +351,60 @@ p span {
 
 .newsletter {
     background-color: var(--platina);
+}
+
+.newsletter h2 {
+    font-size: 4em;
+    font-weight: 400;
+    font-family: var(--hepta-slab);
+}
+
+.newsletter h2 > span {
+    font-weight: 800;
+}
+
+.newsletter p {
+    font-family: var(--hepta-slab);
+    font-weight: 500;
+    font-size: 2.25em;
+    color: var(--cinza);
+    width: 11em;
+    margin-top: 32px;
+}
+
+.newsletter p > span {
+    font-weight: 800;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 92px;
+    width: 80%;
+}
+
+.newsletter form input {
+    width: 95%;
+    background-color: var(--branco);
+    padding: 18px 26px;
+    font-size: 1.125em;
+    font-weight: 400;
+    font-family: var(--montserrat);
+    border: none;
+    margin-bottom: 14px;
+}
+
+.newsletter form button {
+    background-color: var(--preto);
+    color: var(--principal);
+    font-family: var(--hepta-slab);
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 18px 28px;
+    border: none;
+}
+
+.newsletter form button:hover {
+    cursor: pointer;
 }
