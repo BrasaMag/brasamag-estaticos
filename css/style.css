@@ -3,7 +3,7 @@
  * 320 x 768 Mobile
  * 768 x 1024: Tablet
  * 1024 x 1440: Laptop
- * 1025 x 1200: Laptop L
+ * 1025 x 1200: Laptop Large
 */
 
 :root {
@@ -14,6 +14,7 @@
     --cinza: #929292;
     --montserrat: "Montserrat", sans-serif;
     --hepta-slab: "Hepta Slab", serif;
+    --pt-sans: 'PT Sans', sans-serif;
 }
 
 *,
@@ -28,6 +29,7 @@
 
 body {
     background-color: var(--branco);
+    min-width: fit-content;
 }
 
 img {
@@ -94,7 +96,7 @@ header {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 3.25em;
+    margin-bottom: 52px;
 }
 
 .chamada {
@@ -447,12 +449,12 @@ marquee {
 .playlists-images {
     margin: 116px 0;
     padding: 0 100px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
 }
 
 .playlists-images img:nth-child(2) {
-    margin: 0 38px;
     transform: scale(1.1);
 }
 
