@@ -41,6 +41,10 @@ img {
     max-width: 100%;
 }
 
+a:visited { 
+    color: initial;
+}
+
 header {
     background-color: var(--principal);
     padding: 1.938em 5.813em;
@@ -54,7 +58,7 @@ header {
 
 .botao-hamburguer {
     width: 40px;
-    height: 24px;
+    height: 46px;
     padding: 6px 3px;
     display: flex;
     flex-direction: column;
@@ -95,6 +99,129 @@ header {
     padding: 0 0.5em;
     margin-left: 1em;
 } */
+
+nav {
+    display: none;
+    background-color: var(--principal);
+    padding: 32px 0 100px;
+    justify-content: center;
+    gap: 78px;
+}
+
+.nav-lado-esquerdo,
+.nav-lado-direito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-lado-esquerdo {
+    gap: 16px;
+    width: 20%;
+}
+
+.nav-lado-esquerdo p {
+    font-family: var(--hepta-slab);
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    color: var(--preto);
+}
+
+.nav-lado-esquerdo a {
+    font-family: var(--montserrat);
+    font-weight: 800;
+    font-size: 1.125em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 54px;
+}
+
+.nav-links a {
+    font-family: var(--hepta-slab);
+    font-weight: 700;
+    font-size: 2.25em;
+    text-align: center;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+.nav-links hr {
+    border-color: var(--preto);
+    width: 334.76px;
+    margin: 16px 0;
+}
+
+.nav-social {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+    margin-bottom: 34px;
+}
+
+.nav-social img {
+    height: 25px;
+}
+
+.nav-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pages a {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    color: var(--preto);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-pages .pipe {
+    height: 1em;
+    border: 1px solid var(--preto);
+    margin: 0 0.5em;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 3em;
+    }
+
+    .nav-pages a {
+        font-size: 2em;
+    }
+
+    .nav-pages .pipe {
+        height: 2em;
+        margin: 0 1.5em;
+    }
+
+    .nav-lado-esquerdo {
+        width: 70%;
+    }
+
+    .nav-lado-esquerdo a {
+        font-size: 2em;
+    }
+
+    .nav-lado-esquerdo p {
+        font-size: 6em;
+    }
+}
 
 /* Banner */
 
