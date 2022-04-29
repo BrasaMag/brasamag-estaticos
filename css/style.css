@@ -6,6 +6,8 @@
  * 1025 x 1200: Laptop Large
 */
 
+
+/* Variáveis */
 :root {
     --principal: #d6d818;
     --branco: #fff;
@@ -16,6 +18,8 @@
     --hepta-slab: "Hepta Slab", serif;
     --pt-sans: 'PT Sans', sans-serif;
 }
+
+/* Reset & Defaults */
 
 *,
 *::before,
@@ -45,6 +49,8 @@ header {
     align-items: center;
     width: 100%;
 }
+
+/* Menu */
 
 .botao-hamburguer {
     width: 40px;
@@ -90,6 +96,8 @@ header {
     margin-left: 1em;
 } */
 
+/* Banner */
+
 .banner {
     background-image: url("../images/banner.png");
     height: 55vh;
@@ -99,6 +107,14 @@ header {
     margin-bottom: 52px;
 }
 
+@media (max-width:768px) {
+    .banner {
+        height: 80vh;
+    }   
+}
+
+/* Chamada */
+
 .chamada {
     width: 50em;
     margin: 0 auto;
@@ -106,6 +122,15 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+}
+
+.chamada-title {
+    display: flex;
+    justify-content: center;
+}
+
+.chamada-title h1 {
+    width: 90%;
 }
 
 .chamada a {
@@ -134,6 +159,7 @@ header {
 .chamada p a {
     color: var(--preto);
     font-weight: 700;
+    font-size: 1em;
 }
 
 .chamada p {
@@ -151,6 +177,32 @@ header {
 .chamada p span {
     font-weight: 400;
 }
+
+@media (max-width:768px) {
+    .chamada {
+        padding: 5em 0;
+        gap: 2em;
+    }
+    .chamada .chamada-tag  {
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .chamada hr {
+        width: 15em;
+    }
+    
+    .chamada-title h1 {
+        width: 70%;
+        font-size: 5em;
+    }
+
+    .chamada p{
+        font-size: 2em;
+    }
+}
+
+/* Destaques */
 
 .destaques {
     margin-top: 4em;
@@ -212,9 +264,9 @@ marquee {
 .destaque-title {
     font-size: 2.25em;
     color: var(--preto);
-    font-family: var(--montserrat);
     font-weight: 600;
     max-width: 18em;
+    font-family: var(--hepta-slab);
 }
 
 .destaque-info > div {
@@ -232,6 +284,53 @@ marquee {
 .destaque-date {
     font-weight: 500;
 }
+
+@media (max-width:768px) {
+    marquee {
+        font-size: 6em;
+    }
+
+    .destaques-posts {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .destaques-posts .post {
+        margin: 5em 0;
+    }
+
+    .post,
+    .destaque-image,
+    .destaque-image img {
+        width: 100%;
+    }
+
+    .destaque-info {
+        width: 100%;
+        padding-left: 10em;
+        gap: 1em;
+    }
+
+    .destaque-tag {
+        font-size: 2em;
+    }
+
+    .destaque-title {
+        font-size: 3em;
+        width: 80%;
+    }
+
+    .destaque-info > div {
+        font-size: 2em;
+    }
+
+    .destaque-pipe {
+        border: 2px solid var(--branco);
+    }
+}
+
+/* Posts */
 
 .posts {
     margin: 100px 0;
@@ -265,6 +364,7 @@ marquee {
     color: var(--principal);
     font-weight: 700;
     font-family: var(--montserrat);
+    text-transform: uppercase;
 }
 
 .post-title {
@@ -289,6 +389,52 @@ marquee {
 .post-date {
     font-weight: 500;
 }
+
+@media (max-width:768px) {
+    .posts {
+        padding: 0;
+    }
+
+    .posts .post {
+        margin: 2em 0;
+    }
+
+    .post-image {
+        width: 100%;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: center;
+    }
+
+    .post-image img {
+        width: 100%;
+    }
+
+    .posts .post-info {
+        margin-top: 3em;
+        padding-left: 10em;
+        gap: 1.5em;
+    }
+
+    .post-info .post-tag {
+        font-size: 2em;
+    }
+
+    .post-info .post-title {
+        font-size: 3em;
+        width: 60%;
+    }
+
+    .post-info > div {
+        font-size: 2em;
+    }
+
+    .post-pipe {
+        border: 2px solid var(--principal);
+    }
+}
+
+/* Mídias */
 
 .midias {
     margin-top: 100px;
@@ -333,6 +479,7 @@ marquee {
     color: var(--branco);
     font-weight: 800;
     margin-bottom: 16px;
+    font-family: var(--hepta-slab);
 }
 
 .podcast-descricao {
@@ -415,6 +562,59 @@ marquee {
     cursor: pointer;
 }
 
+@media (max-width:768px) {
+    .podcast {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+
+    .podcast > span {
+        font-size: 3em;
+        margin: 1em 0;
+    }
+
+    .podcast-episodio {
+        font-size: 5em;
+    }
+
+    .podcast-descricao {
+        width: 85%;
+    }
+
+    .podcast a {
+        font-size: 3em;
+        padding: 26px 42px;
+        margin-top: 1.5em;
+    }
+
+    .newsletter {
+        padding-top: 8em;
+        padding-bottom: 10em;
+    }
+
+    .newsletter h2 {
+        font-size: 5em;
+    }
+
+    .newsletter form {
+        width: 100%;
+        margin-top: 7em;
+    }
+
+    .newsletter form input {
+        font-size: 3em;
+        padding: 40px 36px;
+    }
+
+    .newsletter form button {
+        font-size: 3em;
+        padding: 26px 42px;
+        margin-top: .5em;
+    }
+}
+
+/* Editoriais */
+
 .editoriais {
     margin: 122px 0;
 }
@@ -430,9 +630,12 @@ marquee {
     padding: 22px 0;
 }
 
+/* Playlists */
+
 .playlists {
     padding: 78px 0;
     background-color: var(--platina);
+    margin: 0 auto;
 }
 
 .playlists marquee {
@@ -454,12 +657,27 @@ marquee {
     gap: 2em;
 }
 
+.playlists-images a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .playlists-images img:nth-child(2) {
     transform: scale(1.1);
 }
 
+@media (max-width:768px) {
+    .playlists-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Tá no insta */
+
 .instagram {
-    padding: 116px 0;
+    padding: 116px 72px;
 }
 
 .instagram p {
@@ -471,10 +689,37 @@ marquee {
 }
 
 .instagram-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
     margin-top: 44px;
+}
+
+.instagram-images a {
     display: flex;
     justify-content: center;
 }
+
+.instagram-images img {
+    max-width: 85%;
+    width: 614px;
+}
+
+@media (max-width:768px) {
+    .instagram-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instagram-images a {
+        height: 608px;
+    }
+
+    .instagram p {
+        font-size: 4em;
+    }
+}
+
+/* Footer */
 
 footer {
     background-color: var(--principal);
@@ -540,4 +785,56 @@ footer p {
     height: 100%;
     border: 1px solid var(--preto);
     margin: 0 0.5em;
+}
+
+@media (max-width:768px) {
+    footer {
+        padding: 6em 0;
+    }
+
+    .footer-logo img {
+        transform: scale(1.5);
+    }
+
+    .footer-manifesto {
+        font-size: 3em;
+        font-size: 1.5em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-manifesto p {
+        width: 55%;
+    }
+
+    .footer-manifesto a {
+        margin-top: 1em;
+        font-size: 1.4em;
+    }
+
+    .footer-links {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-links a {
+        font-size: 2em;
+    }
+
+    .footer-links a:first-child {
+        padding-bottom: .5em;
+        border-bottom: 1px solid var(--preto);
+    }
+
+    .footer-social a img {
+        height: 25px;
+    }
+
+    .footer-pages a {
+        font-size: 1.5em;
+    }
 }
