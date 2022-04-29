@@ -159,6 +159,7 @@ header {
 .chamada p a {
     color: var(--preto);
     font-weight: 700;
+    font-size: 1em;
 }
 
 .chamada p {
@@ -612,6 +613,8 @@ marquee {
     }
 }
 
+/* Editoriais */
+
 .editoriais {
     margin: 122px 0;
 }
@@ -627,9 +630,12 @@ marquee {
     padding: 22px 0;
 }
 
+/* Playlists */
+
 .playlists {
     padding: 78px 0;
     background-color: var(--platina);
+    margin: 0 auto;
 }
 
 .playlists marquee {
@@ -651,12 +657,27 @@ marquee {
     gap: 2em;
 }
 
+.playlists-images a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .playlists-images img:nth-child(2) {
     transform: scale(1.1);
 }
 
+@media (max-width:768px) {
+    .playlists-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Tá no insta */
+
 .instagram {
-    padding: 116px 0;
+    padding: 116px 72px;
 }
 
 .instagram p {
@@ -668,9 +689,34 @@ marquee {
 }
 
 .instagram-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
     margin-top: 44px;
+}
+
+.instagram-images a {
     display: flex;
     justify-content: center;
+}
+
+.instagram-images img {
+    max-width: 85%;
+    width: 614px;
+}
+
+@media (max-width:768px) {
+    .instagram-images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .instagram-images a {
+        height: 608px;
+    }
+
+    .instagram p {
+        font-size: 4em;
+    }
 }
 
 /* Footer */
@@ -764,10 +810,12 @@ footer p {
     }
 
     .footer-manifesto a {
+        margin-top: 1em;
         font-size: 1.4em;
     }
 
     .footer-links {
+        margin-top: 1em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -775,5 +823,18 @@ footer p {
     
     .footer-links a {
         font-size: 2em;
+    }
+
+    .footer-links a:first-child {
+        padding-bottom: .5em;
+        border-bottom: 1px solid var(--preto);
+    }
+
+    .footer-social a img {
+        height: 25px;
+    }
+
+    .footer-pages a {
+        font-size: 1.5em;
     }
 }
