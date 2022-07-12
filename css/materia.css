@@ -13,11 +13,7 @@ article {
     grid-template-columns: 30% 40% 30%;
 }
 
-@media (max-width: 768px) {
-    article {
-        grid-template-columns: 20% 60% 20%;
-    }
-}
+
 
 .compartilhar {
     display: flex;
@@ -133,21 +129,11 @@ q::after {
     gap: 1em;
 }
 
-.newsletter h2 {}
-
 .newsletter p {
     margin-top: 16px;
 }
 
-@media (max-width:768px) {
-    .newsletter {
-        grid-template-columns: 1fr;
-    }
 
-    .newsletter form input {
-        font-size: 22px;
-    }
-}
 
 .editoriais {
     margin: 122px 0 60px;
@@ -155,4 +141,85 @@ q::after {
 
 .destaques-posts {
     padding-bottom: 124px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    .chamada {
+        padding-bottom: 0;
+    }
+
+    .chamada h1 {
+        width: 7.5em;
+    }
+
+    .chamada .chamada-subtitle {
+        width: 13em;
+        font-size: 2em;
+    }
+
+    article {
+        grid-template-columns: 1fr;
+    }
+
+    .materia {
+        padding: 0 20%;
+    }
+
+    .materia p {
+        font-size: 2em;
+        line-height: 1.3em;
+    }
+
+    .compartilhar {
+        display: none;
+    }
+
+    blockquote {
+        font-size: 2em;
+        line-height: 1.2em;
+        width: 100%;
+    }
+
+    .materia .enumerado {
+        font-size: 2em;
+        padding-bottom: 33px;
+    }
+
+    q {
+        font-size: 3em;
+        width: 10em;
+        line-height: 1.3em;
+        margin-top: 3em;
+    }
+
+    .links {
+        gap: 2em;
+    }
+
+    .links img {
+        width: 50px;
+    }
+
+    .newsletter {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+
+@media (min-width:768px) and (max-width: 1024px) {
+    article {
+        grid-template-columns: 20% 60% 20%;
+    }
+
+    .newsletter {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form input {
+        font-size: 22px;
+    }
 }
