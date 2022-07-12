@@ -565,9 +565,14 @@ marquee {
 
 .midias {
     margin-top: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1023px) {
+    .midias {
+        grid-template-columns: 1fr;
+    }
 }
 
 .podcast, .newsletter {
