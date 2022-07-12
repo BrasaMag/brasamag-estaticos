@@ -61,10 +61,16 @@ article {
     grid-template-columns: 30% 40% 30%;
 }
 
+@media (max-width: 768px) {
+    article {
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+
 .compartilhar {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     gap: 1em;
 }
 
@@ -100,7 +106,6 @@ article {
 
 .materia p {
     margin: 1em 0;
-    width: 560px;
     color: var(--jet);
 }
 
@@ -146,7 +151,8 @@ q {
     width: 24em;
 }
 
-q::before, q::after{
+q::before,
+q::after {
     color: var(--principal);
 }
 
@@ -172,14 +178,23 @@ q::before, q::after{
     margin-top: 142px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
 }
 
-.newsletter h2 {
-    width: 8em;
-}
+.newsletter h2 {}
 
 .newsletter p {
     margin-top: 16px;
+}
+
+@media (max-width:768px) {
+    .newsletter {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter form input {
+        font-size: 22px;
+    }
 }
 
 .editoriais {
