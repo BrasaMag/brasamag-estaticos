@@ -42,7 +42,7 @@ img {
     max-width: 100%;
 }
 
-a:visited { 
+a:visited {
     color: initial;
 }
 
@@ -102,11 +102,18 @@ header {
 } */
 
 nav {
-    display: none;
+    display: flex;
+    max-height: 0;
     background-color: var(--principal);
-    padding: 32px 0 100px;
     justify-content: center;
     gap: 78px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+nav.active {
+    padding: 32px 0 100px;
+    max-height: 60em;
 }
 
 .nav-lado-esquerdo,
@@ -237,7 +244,7 @@ nav {
 @media (max-width:768px) {
     .banner {
         height: 80vh;
-    }   
+    }
 }
 
 /* Chamada */
@@ -310,7 +317,8 @@ nav {
         padding: 5em 0;
         gap: 2em;
     }
-    .chamada .chamada-tag  {
+
+    .chamada .chamada-tag {
         font-size: 2em;
         font-weight: 600;
     }
@@ -318,13 +326,13 @@ nav {
     .chamada hr {
         width: 15em;
     }
-    
+
     .chamada-title h1 {
         width: 70%;
         font-size: 5em;
     }
 
-    .chamada p{
+    .chamada p {
         font-size: 2em;
     }
 }
@@ -396,7 +404,7 @@ marquee {
     font-family: var(--hepta-slab);
 }
 
-.destaque-info > div {
+.destaque-info>div {
     color: var(--preto);
     font-weight: 700;
     font-family: var(--montserrat);
@@ -448,7 +456,7 @@ marquee {
         width: 80%;
     }
 
-    .destaque-info > div {
+    .destaque-info>div {
         font-size: 2em;
     }
 
@@ -502,7 +510,7 @@ marquee {
     font-family: var(--hepta-slab);
 }
 
-.post-info > div {
+.post-info>div {
     color: var(--preto);
     font-weight: 700;
     font-family: var(--montserrat);
@@ -553,7 +561,7 @@ marquee {
         width: 60%;
     }
 
-    .post-info > div {
+    .post-info>div {
         font-size: 2em;
     }
 
@@ -576,7 +584,8 @@ marquee {
     }
 }
 
-.podcast, .newsletter {
+.podcast,
+.newsletter {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -601,7 +610,7 @@ marquee {
     font-weight: 800;
 }
 
-.podcast > span {
+.podcast>span {
     font-size: 1.125em;
     color: var(--principal);
     font-family: var(--montserrat);
@@ -645,7 +654,7 @@ marquee {
     font-family: var(--hepta-slab);
 }
 
-.newsletter h2 > span {
+.newsletter h2>span {
     font-weight: 800;
 }
 
@@ -658,7 +667,7 @@ marquee {
     margin-top: 32px;
 }
 
-.newsletter p > span {
+.newsletter p>span {
     font-weight: 800;
 }
 
@@ -707,7 +716,7 @@ marquee {
         padding-bottom: 10em;
     }
 
-    .podcast > span {
+    .podcast>span {
         font-size: 3em;
         margin: 1em 0;
     }
@@ -959,7 +968,7 @@ footer p {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .footer-links a {
         font-size: 2em;
     }
