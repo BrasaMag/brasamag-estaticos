@@ -478,6 +478,7 @@ marquee {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex: 1 1 30%;
 }
 
 .post-info {
@@ -579,6 +580,7 @@ marquee {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     flex: 1;
     padding: 50px 6.25em;
 }
@@ -619,7 +621,6 @@ marquee {
     font-weight: 400;
     font-size: 3em;
     color: var(--branco);
-    width: 12em;
     letter-spacing: 1px;
 }
 
@@ -665,7 +666,7 @@ marquee {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 92px;
+    margin-top: 46px;
     width: 80%;
 }
 
@@ -678,6 +679,12 @@ marquee {
     font-family: var(--montserrat);
     border: none;
     margin-bottom: 14px;
+    outline: 2px solid transparent;
+    transition: outline ease 300ms;
+}
+
+.newsletter form input:focus {
+    outline: 2px solid var(--principal);
 }
 
 .newsletter form button {
