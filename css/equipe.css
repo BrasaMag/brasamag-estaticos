@@ -1,67 +1,72 @@
-main {
-    padding-top: 92px;
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  margin: 1em 0;
+  font-family: var(--hepta-slab);
 }
 
-h1 {
-    color: var(--preto);
-    font-family: var(--hepta-slab);
-    font-weight: 800;
-    font-size: 64px;
-    text-align: center;
-}
+
 
 .descricao {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
 }
 
 .descricao p {
-    font-family: var(--montserrat);
-    font-weight: 400;
-    font-size: 18px;
-    margin-top: 48px;
-    width: 37em;
-    text-align: center;
+  text-align: center;
+}
+
+.descricao p:first-child {
+  font-family: var(--hepta-slab);
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .descricao p:last-child {
-    font-weight: 700;
+  font-family: var(--montserrat);
+  font-weight: 700;
 }
 
 .equipe {
-    margin: 94px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 2em 0 4em;
 }
 
 .equipe p {
-    text-align: center;
-    font-family: var(--montserrat);
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--principal);
-    text-transform: uppercase;
-    margin-bottom: 32px;
+  text-align: center;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  color: var(--principal);
+  margin-top: 3em;
+  margin: 2em 0;
+  font-size: 1.5em;
 }
 
 .gang {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 920px;
-    gap: 2em;
-    margin-bottom: 98px;
-}
-
-.gang a:hover img {
-    border: 2px solid var(--principal);
+  width: 90vw;
+  margin: 0 auto;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  overflow: scroll;
 }
 
 .gang img {
-    border: 2px solid transparent;
-    border-radius: 100%;
-    width: 140px;
-    transition: border ease 300ms;
+  display: initial;
+  max-width: initial;
+}
+
+@media only screen and (min-width: 1024px) {
+  .descricao p:first-child {
+    margin: 0 auto;
+    width: 36em;
+  }
+
+  .gang {
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: unset;
+  }
 }
