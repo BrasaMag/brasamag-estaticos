@@ -1,0 +1,81 @@
+.banner-manifesto {
+    background-image: url("../images/banner-manifesto.png");
+    height: 575px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.banner-manifesto-sub {
+    background-image: url("../images/capa_tt.png");
+    height: 494px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin-top: 5em;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: var(--hepta-slab);
+    font-weight: 800;
+    font-size: 3em;
+    margin: 1em auto 2em;
+    padding: 0 0.5em;
+    width: 15em;
+}
+
+section {
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 5em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p,
+span {
+    font-size: 24px;
+}
+
+p {
+    font-family: var(--montserrat);
+    transform: rotate(-9.04deg);
+    width: 24em;
+}
+
+span {
+    display: block;
+    transform: rotate(9.25deg);
+    width: 18em;
+    font-size: 24px;
+}
+
+blockquote {
+    font-family: var(--hepta-slab);
+    font-weight: 700;
+    border-left: 1px solid var(--principal);
+    padding-left: 1em;
+    width: 21em;
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 2em auto 3em;
+    font-weight: 700;
+    font-family: var(--hepta-slab);
+    text-decoration: none;
+    background-color: #000;
+    color: var(--principal) !important;
+    padding: 1em;
+    text-align: center;
+    font-size: 24px;
+}
