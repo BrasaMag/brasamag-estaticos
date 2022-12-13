@@ -1,0 +1,96 @@
+body {
+    background-color: var(--principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+body>span {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: 700;
+    font-family: var(--montserrat);
+    padding-bottom: 0.3em;
+    width: 100px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-family: var(--hepta-slab);
+    font-weight: 800;
+}
+
+p {
+    font-family: var(--hepta-slab);
+    font-size: 24px;
+    text-align: center;
+}
+
+form {
+    margin: 3em 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+
+label {
+    font-family: var(--montserrat);
+    font-weight: 700;
+}
+
+input,
+textarea {
+    border: none;
+    width: 25em;
+    height: 3em;
+}
+
+textarea {
+    height: 10em;
+}
+
+button {
+    margin-top: 1em;
+    background-color: #000;
+    color: var(--principal);
+    padding: 1em;
+    font-family: var(--hepta-slab);
+    font-weight: 700;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+div {
+    text-align: center;
+    font-family: var(--montserrat);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+div>span {
+    display: block;
+    font-weight: 700;
+}
+
+a {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
