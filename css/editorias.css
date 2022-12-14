@@ -1,0 +1,105 @@
+h1 {
+  font-family: var(--hepta-slab);
+  font-weight: 800;
+  text-align: center;
+  margin: 1em 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 4em;
+  width: 70vw;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--principal);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: var(--montserrat);
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  padding-bottom: 0.3em;
+}
+
+a:visited {
+  color: var(--principal);
+}
+
+ul li a:hover {
+  border-color: var(--principal);
+}
+
+section {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2em;
+  padding: 0 2em;
+  max-width: 1024px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 0.5em;
+}
+
+span,
+small {
+  font-family: var(--montserrat);
+}
+
+span {
+  color: var(--principal);
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--hepta-slab);
+  font-weight: 600;
+}
+
+small {
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+}
+
+small > span {
+  color: #000;
+  font-weight: 500;
+}
+
+small > span::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 1em;
+  background-color: var(--principal);
+  margin: 0 0.5em;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  ul {
+    justify-content: center;
+  }
+
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

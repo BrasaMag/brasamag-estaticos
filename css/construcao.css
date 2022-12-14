@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    height: 100vh;
+}
+
+span {
+    color: var(--principal);
+    font-weight: 700;
+    font-family: var(--montserrat);
+    border-bottom: 1px solid var(--principal);
+    padding-bottom: 0.3em;
+    width: 120px;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h1,
+p {
+    font-family: var(--hepta-slab);
+}
+
+span,
+h1,
+p {
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    gap: 1em;
+}
+
+.links img {
+    color: var(--principal);
+}
