@@ -81,25 +81,36 @@ header {
     border-radius: 10px;
 }
 
-/* TODO: Ver como será o input
-
-.form-pesquisa {
+form {
     display: flex;
+    gap: 1em;
 }
 
-.form-pesquisa label:hover {
+form label:hover,
+form button:hover {
     cursor: pointer;
 }
 
-.form-pesquisa input {
+form input.active,
+form button.active {
+    display: block;
+}
+
+form input {
     display: none;
     border: none;
     border-bottom: 2px solid var(--preto);
     background-color: transparent;
-    outline: none;
     padding: 0 0.5em;
-    margin-left: 1em;
-} */
+    font-size: 1em;
+}
+
+form button {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
 
 nav {
     display: flex;
@@ -250,7 +261,6 @@ nav.active {
 /* Chamada */
 
 .chamada {
-    width: 50em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;

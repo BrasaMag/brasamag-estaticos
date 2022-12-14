@@ -25,12 +25,12 @@
         <a href="/">
             <img src="images/logo_menu 1.png" alt="logo da brasa">
         </a>
-        <form action="/busca.html" method="get" class="form-pesquisa">
-            <label for="pesquisa" style="cursor: pointer;">
+        <form name="busca" action="/busca.html" method="get">
+            <label for="pesquisa" style="cursor: pointer;" tabindex="0" role="button">
                 <img src="images/search.png" alt="imagem da lupa para pesquisar" title="Pesquisar post">
             </label>
-            <!-- TODO: Ver como será o input -->
-            <!-- <input type="search" id="pesquisa" name="pesquisa"> -->
+            <input type="search" id="pesquisa" name="pesquisa">
+            <button type="reset">X</button>
         </form>
     </header>
 
