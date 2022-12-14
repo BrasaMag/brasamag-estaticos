@@ -23,14 +23,14 @@
             <div class="linha"></div>
         </button>
         <a href="/">
-            <img src="images/logo_menu 1.png" alt="logo da brasa">
+            <img src="./images/logo_menu 1.png" alt="logo da brasa">
         </a>
-        <form action="/busca.html" method="get" class="form-pesquisa">
-            <label for="pesquisa" style="cursor: pointer;">
+        <form name="busca" action="/busca.html" method="get">
+            <label for="pesquisa" style="cursor: pointer;" tabindex="0" role="button">
                 <img src="images/search.png" alt="imagem da lupa para pesquisar" title="Pesquisar post">
             </label>
-            <!-- TODO: Ver como será o input -->
-            <!-- <input type="search" id="pesquisa" name="pesquisa"> -->
+            <input type="search" id="pesquisa" name="pesquisa">
+            <button type="reset">X</button>
         </form>
     </header>
 
@@ -38,7 +38,7 @@
     <nav>
         <div class="nav-lado-esquerdo">
             <p>Somos veículo de revolução</p>
-            <a href="" class="manifesto-link">
+            <a href="/manifesto.html" class="manifesto-link">
                 <img src="./images/arrow-right.png" alt="">
                 manifesto brasa
             </a>
@@ -59,11 +59,9 @@
                 </a>
             </div>
             <div class="nav-pages">
-                <a href="">Equipe</a>
+                <a href="/equipe.html">Equipe</a>
                 <span class="pipe"></span>
-                <a href="">Contato</a>
-                <span class="pipe"></span>
-                <a href="">Sobre</a>
+                <a href="/contato.html">Contato</a>
             </div>
         </div>
     </nav>
@@ -71,9 +69,9 @@
     <div class="banner"></div>
 
     <div class="chamada">
-        <a class="chamada-tag" href="/">Música</a>
+        <a class="chamada-tag" href="/editorias.html">Música</a>
         <hr>
-        <a class="chamada-title" href="">
+        <a class="chamada-title" href="/materia.html">
             <h1> 5 djs sets pra começar o ano bem</h1>
         </a>
         <p class="chamada-author"><a href="">Brenda Vidal</a> <span class="pipe"></span> <span> 12.01.2020</span></p>
@@ -346,13 +344,13 @@
     <section class="instagram">
         <p>tá no insta</p>
         <div class="instagram-images">
-            <a href="">
+            <a href="https://www.instagram.com/brasamag/">
                 <img src="./images/insta-post-brasa-3.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/brasamag/">
                 <img src="./images/insta-post-brasa-2.png" alt="">
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/brasamag/">
                 <img src="./images/insta-post-brasa.png" alt="">
             </a>
         </div>
@@ -364,14 +362,13 @@
         </div>
         <div class="footer-manifesto">
             <p>Somos veículo de revolução</p>
-            <a href="" class="manifesto-link">
+            <a href="/manifesto.html" class="manifesto-link">
                 <img src="./images/arrow-right.png" alt="">
                 manifesto brasa
             </a>
         </div>
         <div class="footer-links">
-            <a href="">Editoriais</a>
-            <a href="">Projetos</a>
+            <a href="/editorias.html">Editoriais</a>
         </div>
         <div class="footer-social">
             <a href="https://twitter.com/brasamag" target="_blank">
@@ -382,11 +379,9 @@
             </a>
         </div>
         <div class="footer-pages">
-            <a href="">Equipe</a>
+            <a href="/equipe.html">Equipe</a>
             <span class="pipe"></span>
-            <a href="">Contato</a>
-            <span class="pipe"></span>
-            <a href="">Sobre</a>
+            <a href="/contato.html">Contato</a>
         </div>
     </footer>
 
